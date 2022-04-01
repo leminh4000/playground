@@ -1,5 +1,4 @@
 FROM gitpod/workspace-full
 
-RUN cargo install cargo-deny
-RUN cargo install cargo-udeps
-RUN rustup component add clippy
+RUN sudo apt-get update \
+    && sudo apt-get install cowsay -y
